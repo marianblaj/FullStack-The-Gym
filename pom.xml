@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>The Gym</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+
+    <properties>
+
+        <complexType name="SubscriptionRequest">
+            <complexContent>
+                <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                    <sequence>
+                        <element name="watcher" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
+                        <element name="attributes" type="{http://www.csapi.org/schema/parlayx/presence/v2_3}PresenceAttributeType" maxOccurs="unbounded"/>
+                        <element name="application" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                    </sequence>
+                </restriction>
+            </complexContent>
+        </complexType>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+
+</project>
